@@ -100,7 +100,7 @@ struct ContentView: View {
             if timeRemaining > 0 {
                 timeRemaining -= 1
 
-                // Challenge: Moving target every second
+                
                 moveButton()
 
             } else {
@@ -117,7 +117,7 @@ struct ContentView: View {
         let screenHeight: CGFloat = 600
 
         buttonX = CGFloat.random(in: 80...screenWidth)
-        buttonY = CGFloat.random(in: 150...screenHeight)
+        buttonY = CGFloat.random(in: 200...screenHeight)
     }
 
     // MARK: - Restart Game
@@ -132,7 +132,7 @@ struct ContentView: View {
         moveButton()
     }
 
-    // MARK: - High Score
+    
     func updateHighScore() {
         if score > highScore {
             highScore = score
