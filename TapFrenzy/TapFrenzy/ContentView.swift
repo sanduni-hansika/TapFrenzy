@@ -14,7 +14,7 @@ struct ContentView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var buttonSize: CGFloat {
-        // Challenge: Shrinking Button
+        
         let baseSize: CGFloat = 90
         let shrink = CGFloat(10 - timeRemaining) * 5
         return max(40, baseSize - shrink)
@@ -68,7 +68,7 @@ struct ContentView: View {
 
             } else {
 
-                VStack(spacing: 30) {
+                VStack(spacing: 20) {
 
                     Text("Game Over")
                         .font(.largeTitle)
@@ -120,7 +120,6 @@ struct ContentView: View {
         buttonY = CGFloat.random(in: 150...screenHeight)
     }
 
-    // MARK: - Restart Game
     func restartGame() {
 
         updateHighScore()
