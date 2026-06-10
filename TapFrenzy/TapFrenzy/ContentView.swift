@@ -68,7 +68,7 @@ struct ContentView: View {
 
             } else {
 
-                VStack(spacing: 20) {
+                VStack(spacing: 30) {
 
                     Text("Game Over")
                         .font(.largeTitle)
@@ -117,7 +117,7 @@ struct ContentView: View {
         let screenHeight: CGFloat = 600
 
         buttonX = CGFloat.random(in: 80...screenWidth)
-        buttonY = CGFloat.random(in: 200...screenHeight)
+        buttonY = CGFloat.random(in: 150...screenHeight)
     }
 
     // MARK: - Restart Game
